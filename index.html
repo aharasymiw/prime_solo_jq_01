@@ -8,7 +8,41 @@
 	
 	<body>
 		
-		<script src = '2.1.4.min.js'></script>
+		<form id='empForm'>
+			<label for='firstName'>First Name: </label>
+			<br>
+			<input type='text' placeholder='Joseph' name='firstName' required></input>
+			<br>
+			<label for='lastName'>Last Name: </label>
+			<br>
+			<input type='text' placeholder='Szczesniak' name='lastName' required></input>
+			<br>
+			<label for='empNum'>Employee Number: </label>
+			<br>
+			<input type='number' min = '0' placeholder='24601' name='empNum' required></input>
+			<br>
+			<label for='title'>Employee Title: </label>
+			<br>
+			<input type='text' placeholder='Chief of Awesome' name='title' required></input>
+			<br>
+			<label for='reviewScore'>Last Review Score(1-5): </label>
+			<br>
+			<input type='number' min='1' max='5' placeholder='5' name='reviewScore' required></input>
+			<br>
+			<label for='salary'>Salary: </label>
+			<br>
+			<input type='number' min='0' placeholder='1000000' name='salary' required></input>
+			<br>	
+			<input type='submit' value='Save This Employee'></input>
+		</form>		
+		
+		<section id='empDisplay'>
+			<ol id='empList'>
+			</ol>
+		</section>
+		
+		
+		<script src = 'jquery-2.1.4.min.js'></script>
 		<script src = 'script.js'></script>
 	</body>	
 </html>
