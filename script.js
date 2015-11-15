@@ -11,6 +11,22 @@ function Employee(firstName, lastName, empNum, title, reviewScore, salary) {
 // Global variable declarations, and default initializations
 var employeeArray = []; // Each element represents one employee as an Employee object
 
+// MAKE STURE TO DELETE THIS BLOCK!!!!!
+// Added for testing
+employeeArray.push(new Employee('Andrew', 'Harasymiw', 42, 'Cool Guy', 5, 65000)); // Add the new Employee instance to the array of employees
+console.log(employeeArray);
+employeeArray.push(new Employee('Lauren', 'Jelenchick', 1, 'Love of Life', 5, 25000)); // Add the new Employee instance to the array of employees
+console.log(employeeArray);
+employeeArray.push(new Employee('Derek', 'Roche', 99, 'Cool Guy', 3, 55000)); // Add the new Employee instance to the array of employees
+console.log(employeeArray);
+employeeArray.push(new Employee('Gwen', 'Paul', 83, 'Cool Girl', 4, 60000)); // Add the new Employee instance to the array of employees
+console.log(employeeArray);
+employeeArray.push(new Employee('John', 'Crimmings', 3, 'Cool Guy', 4, 70000)); // Add the new Employee instance to the array of employees
+console.log(employeeArray);
+for (var i = 0; i < employeeArray.length; i++){
+  drawEmployee(i); // Draw the most newly input employee
+}
+
 // A function to draw a an Employee object for employeeArray[i]
 function drawEmployee(i){
   var employee = employeeArray[i]; // 
@@ -30,16 +46,10 @@ function drawEmployee(i){
 
   $button.attr('id', 'employee' + i); // Add a class to the remove button based on the Employee's position in employeeArray, #employee[i]
   $button.addClass('remove'); // Add a .remove class to the remove button 
-
-/* DO WE NEED THIS LINE */
-//  $ul.attr('id', 'employee0' + i); // Add a class to the employee <ul> based on the Employee's position in employeeArray, #employee[i]
   $ul.addClass('review' + employee.reviewScore); // Add a class to the <ul> based on Employee reviewScore, .review(1-5)
-  
   $('#empList').append($ul); // Add the <ul> for the employee to <ol #empList> of employees
 }
 
-// MAKE STURE TO UNCOMENT THIS BLOCK!!!!!
-/* Commented out for removal testing
 // Add new employee
 $(function() { // Wait until the document is loaded and ready
   $('#empForm').on('submit', function(event){ // Check for a form submission
@@ -57,40 +67,17 @@ $(function() { // Wait until the document is loaded and ready
     drawEmployee(employeeArray.length - 1); // Draw the most newly input employee
   })
 });
-*/
-
-// MAKE STURE TO DELETE THIS BLOCK!!!!!
-// Added for removal testing
-employeeArray.push(new Employee('Andrew', 'Harasymiw', 42, 'Cool Guy', 5, 65000)); // Add the new Employee instance to the array of employees
-console.log(employeeArray);
-employeeArray.push(new Employee('Lauren', 'Jelenchick', 1, 'Love of Life', 5, 25000)); // Add the new Employee instance to the array of employees
-console.log(employeeArray);
-employeeArray.push(new Employee('Derek', 'Roche', 99, 'Cool Guy', 3, 55000)); // Add the new Employee instance to the array of employees
-console.log(employeeArray);
-employeeArray.push(new Employee('Gwen', 'Paul', 83, 'Cool Girl', 4, 60000)); // Add the new Employee instance to the array of employees
-console.log(employeeArray);
-employeeArray.push(new Employee('Joh ', 'Crimmings', 3, 'Cool Guy', 4, 70000)); // Add the new Employee instance to the array of employees
-console.log(employeeArray);
-for (var i = 0; i < employeeArray.length; i++){
-  drawEmployee(i); // Draw the most newly input employee
-}
-
 
 // Remove an employee
 $(function() { // Wait until the document is loaded and ready
-  $('ul').on('click', 'button', function(){ // Check for a .remove Employee button click
+  $('#empList').on('click', 'button', function(){ // Check for a .remove Employee button click
     var employeePosition = $(this).attr('id'); // Stores the Employee's possition as the .class[i] of the .remove button
-    console.log(employeePosition); // For testing, yo
     
     // Updates Employee's possition to [i], it's loctaion in employeeArray
     employeePosition = employeePosition.charAt(employeePosition.length - 1); 
     delete employeeArray[employeePosition]; // Remove the Employee from employeeArray
     $(this).closest('ul').remove();
     
-/*
-    for(var i = 0; i < employeeArray.length; i++){
-      drawEmployee(employeeArray[i]);
-    }
-*/
+    console.log(employeeArray);
   });
 });
