@@ -6,52 +6,56 @@
 		<title>Employees</title>
 	</head>
 	
-	<body>		
-		<form id='empForm'>
-			<label for='firstName'>First Name: </label>
-			<br>
-			<input class='input' type='text' placeholder='Joseph' name='firstName' required></input>
-			<br>
-			<label for='lastName'>Last Name: </label>
-			<br>
-			<input class='input' type='text' placeholder='Szczesniak' name='lastName' required></input>
-			<br>
-			<label for='empNum'>Employee Number: </label>
-			<br>
-			<input class='input' type='number' min = '0' placeholder='24601' name='empNum' required></input>
-			<br>
-			<label for='title'>Employee Title: </label>
-			<br>
-			<input class='input' type='text' placeholder='Chief of Awesome' name='title' required></input>
-			<br>
-			<label for='reviewScore'>Last Review Score(1-5): </label>
-			<br>
-			<input class='input' type='number' min='1' max='5' placeholder='5' name='reviewScore' required></input>
-			<br>
-			<label for='salary'>Salary: </label>
-			<br>
-			<input class='input' type='number' min='0' placeholder='1000000' name='salary' required></input>
-			<br>	
-			<input id='submit' type='submit' value='Save This Employee'></input>
-		</form>
+	<body>
+		<h1>Our most valuable Assets:</h1>
 
-
-		<section id='empDisplay'>
-			<ol id='empList'>
-			</ol>
-		</section>
-			
+		<aside>
+			<h2>Total Annual Labor Cost: $0.00</h2>
+		</aside>			
+		
 		<h2>Add a new Employee!</h2>
 		<h2>These are the current Employees!</h2>
+		
+		<main>			
+			<form id='empForm'>
+				<label for='firstName'>First Name: </label>
+				<br>
+				<input class='input' type='text' placeholder='Joseph' name='firstName' required></input>
+				<br>
+				<label for='lastName'>Last Name: </label>
+				<br>
+				<input class='input' type='text' placeholder='Szczesniak' name='lastName' required></input>
+				<br>
+				<label for='empNum'>Employee Number: </label>
+				<br>
+				<input class='input' type='number' min = '0' placeholder='24601' name='empNum' required></input>
+				<br>
+				<label for='title'>Employee Title: </label>
+				<br>
+				<input class='input' type='text' placeholder='Chief of Awesome' name='title' required></input>
+				<br>
+				<label for='reviewScore'>Last Review Score(1-5): </label>
+				<br>
+				<input class='input' type='number' min='1' max='5' placeholder='5' name='reviewScore' required></input>
+				<br>
+				<label for='salary'>Salary: </label>
+				<br>
+				<input class='input' type='number' min='0' placeholder='1000000' name='salary' required></input>
+				<br>	
+				<input id='submit' type='submit' value='Save This Employee'></input>
+			</form>
+
+			<section id='empDisplay'>
+				<ol id='empList'>
+				</ol>
+			</section>
+		</main>
 				
 		<input class='button' type='button' value='Generate random employee' id='random'></input>
 		<br>
 		<input class='button' type='button' value='Sort Employees by First Name' id='firstName'></input>
 		<br>					
 		<input class='button' type='button' value='Sort Employees by Last Name' id='lastName'></input>
-		
-		<aside>
-		</aside>
 		
 		<script src = 'jquery-2.1.4.min.js'></script>
 		<script src = 'script.js'></script>

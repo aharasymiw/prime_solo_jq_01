@@ -124,7 +124,7 @@ function drawEmployee(i){
 function redrawArray(){
   $('ol > ul').remove(); // Remove all Employee's from <ol #empList>, ie: undraw the Employee
   $('aside > h2').remove();
-  $('aside').append($('<h2>').text('Total Annual Labor Cost: ' + employeeCost));
+  $('aside').append($('<h2>').text('Total Annual Labor Cost: $' + employeeCost));
   
   // Reprint the entire employeeArray of 'test' names to the screen
   for (var i = 0; i < employeeArray.length; i++){

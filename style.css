@@ -1,6 +1,8 @@
-body {
-	clear: both;
-	position: relative;
+main {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 }
 
 #submit {
@@ -8,26 +10,26 @@ body {
 }
 
 #empForm {
-	position: relative;
+	display: flexbox;
 	top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
-	float: left;
 	width: 200px;
 	height: 300px;
-	margin: 5px 5px 5px 5px;
 	border: 3px dotted grey;
 	background-color: lightblue;
 }
 
 #empDisplay {
-	position: relative;
+	display: flexbox;
 	top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	overflow: scroll;
-	float: right;
 	width: 300px;
-	height: 500px;
-	margin: 5px 5px 5px 5px;
+	height: 300px;
 	border: 3px dotted grey;
 	background-color: aqua;
 }
@@ -43,7 +45,16 @@ body {
 
 h2 {
 	display: inline;
-	margin: 5px 200px 5px 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ol {
+	width: 160.2px;
+}
+
+ul {
+	width: 160.2px;
 }
 
 li {
