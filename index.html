@@ -7,63 +7,69 @@
 	</head>
 	
 	<body>
+		<header>
+			<h1>
+				Employee Project
+			</h1>
 		
-		<h1>
-			Employee Project
-		</h1>
+			<section id='working'>
+				<h2>Working</h2>
+				<ul>
+					<li>Default Employee data for testing</li>
+					<li>Add an Employee</li>
+					<li>Draw an Employee to the screen</li>
+					<li>Remove an Employee from screen when button is clicked</li>
+				</ul>
+			</section>
 		
-		<h2>Working</h2>
-			<ul>
-				<li>Default Employee data for testing</li>
-				<li>Add an Employee</li>
-				<li>Draw an Employee to the screen</li>
-				<li>Remove an Employee from screen when button is clicked</li>
-			</ul>
-
-		<h2>Not Working</h2>
-			<ul>
-				<li>Remove empty spaces from employeeArray after an Employee is deleted</li>
-				<li>Update button id for following Employees when an Employee is removed from employeeArray</li>
-				<li>CSS - Make it look nice</li>
-				<li>Hard Mode</li>
-				<li>Pro Mode</li>
-			</ul>
-
-		<form id='empForm'>
-			<h2>Add a new Employee!</h2>
-			<label for='firstName'>First Name: </label>
-			<br>
-			<input type='text' placeholder='Joseph' name='firstName' required></input>
-			<br>
-			<label for='lastName'>Last Name: </label>
-			<br>
-			<input type='text' placeholder='Szczesniak' name='lastName' required></input>
-			<br>
-			<label for='empNum'>Employee Number: </label>
-			<br>
-			<input type='number' min = '0' placeholder='24601' name='empNum' required></input>
-			<br>
-			<label for='title'>Employee Title: </label>
-			<br>
-			<input type='text' placeholder='Chief of Awesome' name='title' required></input>
-			<br>
-			<label for='reviewScore'>Last Review Score(1-5): </label>
-			<br>
-			<input type='number' min='1' max='5' placeholder='5' name='reviewScore' required></input>
-			<br>
-			<label for='salary'>Salary: </label>
-			<br>
-			<input type='number' min='0' placeholder='1000000' name='salary' required></input>
-			<br>	
-			<input type='submit' value='Save This Employee'></input>
-		</form>		
+			<section id='notWorking'>
+				<h2>Not Working</h2>
+				<ul>
+					<li>Remove empty spaces from employeeArray after an Employee is deleted</li>
+					<li>Update button id for following Employees when an Employee is removed from employeeArray</li>
+					<li>CSS - Make it look nice</li>
+					<li>Hard Mode</li>
+					<li>Pro Mode</li>
+				</ul>
+			</section>
+		</header>
 		
-		<section id='empDisplay'>
-			<h2>These are the current Employees</h2>
-			<ol id='empList'>
-			</ol>
-		</section>
+		<main>
+			<form id='empForm'>
+				<h2>Add a new Employee!</h2>
+				<label for='firstName'>First Name: </label>
+				<br>
+				<input type='text' placeholder='Joseph' name='firstName' required></input>
+				<br>
+				<label for='lastName'>Last Name: </label>
+				<br>
+				<input type='text' placeholder='Szczesniak' name='lastName' required></input>
+				<br>
+				<label for='empNum'>Employee Number: </label>
+				<br>
+				<input type='number' min = '0' placeholder='24601' name='empNum' required></input>
+				<br>
+				<label for='title'>Employee Title: </label>
+				<br>
+				<input type='text' placeholder='Chief of Awesome' name='title' required></input>
+				<br>
+				<label for='reviewScore'>Last Review Score(1-5): </label>
+				<br>
+				<input id='poop' type='number' min='1' max='5' placeholder='5' name='reviewScore' required></input>
+				<br>
+				<label for='salary'>Salary: </label>
+				<br>
+				<input type='number' min='0' placeholder='1000000' name='salary' required></input>
+				<br>	
+				<input type='submit' value='Save This Employee'></input>
+			</form>
 		
+			<section id='empDisplay'>
+				<h2>These are the current Employees</h2>
+				<ol id='empList'>
+				</ol>
+			</section>
+		</main>	
 		
 		<script src = 'jquery-2.1.4.min.js'></script>
 		<script src = 'script.js'></script>
