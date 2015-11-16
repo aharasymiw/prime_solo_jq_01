@@ -1,57 +1,71 @@
-#poop{
-	width: 500px;
-}
 body {
 	clear: both;
+	position: relative;
 }
 
-header {
-	width: 1050px;
-	margin: 5px 5px 5px 5px;
-	border: 3px solid black;
-	background-color: darkred;
-}
-
-#working {
-	float: left;
-	width: 500px;
-	margin: 5px 5px 5px 5px;
-	border: 3px dotted grey;
-	background-color: red;
-}
-
-#notWorking {
-	float: right;
-	width: 500px;
-	margin: 5px 5px 5px 5px;
-	border: 3px dotted grey;
-	background-color: lightpink;
-}
-
-main {
-	width: 1050px;
-	margin: 5px 5px 5px 5px;
-	border: 3px solid black;
-	background-color: darkblue;
-	clear: both;
+#submit {
+	margin: 10px;
 }
 
 #empForm {
+	position: relative;
+	top: 50px;
+	text-align: center;
 	float: left;
-	width: 500px;
-	height: 342;
+	width: 200px;
+	height: 300px;
 	margin: 5px 5px 5px 5px;
 	border: 3px dotted grey;
 	background-color: lightblue;
 }
 
 #empDisplay {
+	position: relative;
+	top: 50px;
+	text-align: center;
 	overflow: scroll;
 	float: right;
-	width: 500px;
-	height: 342px;
-	
+	width: 300px;
+	height: 500px;
 	margin: 5px 5px 5px 5px;
 	border: 3px dotted grey;
 	background-color: aqua;
+}
+
+.input {
+	text-align: center;
+}
+
+.button {
+	position: center;
+	margin: 5px 5px 20px 5px;
+}
+
+h2 {
+	display: inline;
+	margin: 5px 200px 5px 200px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.review5 em {
+	color: blue;
+}
+
+.review4 em {
+	color: green;	
+}
+
+.review3 em {
+	color: yellow;	
+}
+
+.review2 em {
+	color: orange;	
+}
+
+.review1 em {
+	color: red;	
 }
