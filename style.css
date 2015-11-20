@@ -1,82 +1,60 @@
+h1, h2 {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
 main {
 	display: flex;
 	justify-content: center;
-	align-content: center;
 	align-items: center;
 }
 
-#submit {
-	margin: 10px;
-}
-
-#empForm {
-	display: flexbox;
-	top: 50px;
+section {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 200px;
+	width: 33%;
 	height: 300px;
-	border: 3px dotted grey;
 	background-color: lightblue;
 }
 
-#empDisplay {
-	display: flexbox;
-	top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	overflow: scroll;
-	width: 300px;
-	height: 300px;
-	border: 3px dotted grey;
-	background-color: aqua;
-}
-
-.input {
-	text-align: center;
-}
-
-.button {
-	position: center;
-	margin: 5px 5px 20px 5px;
-}
-
-h2 {
-	display: inline;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 ol {
-	width: 160.2px;
+	height:225px;
+	overflow: scroll;
 }
 
 ul {
-	width: 160.2px;
+	margin-bottom: 20px;
 }
 
-li {
-	list-style-type: none;
+footer {
+	display: flex;
+	margin: 40px;
 }
 
-.review5 em {
+button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.review1 em{
+	color: red;
+}
+
+.review2 em{
+	color: orange;
+}
+
+.review3 em{
+	color: yellow;
+}
+
+.review4 em{
+	color: green;
+}
+
+.review5 em{
 	color: blue;
-}
-
-.review4 em {
-	color: green;	
-}
-
-.review3 em {
-	color: yellow;	
-}
-
-.review2 em {
-	color: orange;	
-}
-
-.review1 em {
-	color: red;	
 }
